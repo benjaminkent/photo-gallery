@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class PhotoList extends Component {
+class Category extends Component {
   render() {
     return (
       <article className="category">
@@ -12,4 +12,4 @@ class PhotoList extends Component {
   }
 }
 
-export default PhotoList
+export default Category

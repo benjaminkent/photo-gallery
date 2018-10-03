@@ -6,6 +6,7 @@ body {
   font-family: 'Muli', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #363636;
 }
 
 header {
