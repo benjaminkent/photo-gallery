@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Json from './Json.json'
+import Category from './Category'
 
 class App extends Component {
   constructor(props) {
@@ -16,16 +17,8 @@ class App extends Component {
           <h2>A Photo Gallery by Benjamin Kent Jehl</h2>
         </header>
         <main>
-          <article className="category">
-            <h3>{this.state.pandas.title}</h3>
-            <p>{this.state.pandas.description}</p>
-            <img src={this.state.pandas.photos[0].imageURL} />
-          </article>
-          <article className="category">
-            <h3>{this.state.miniatures.title}</h3>
-            <p>{this.state.miniatures.description}</p>
-            <img src={this.state.miniatures.photos[0].imageURL} />
-          </article>
+          <Category category={this.state.pandas} />
+          <Category category={this.state.miniatures} />
         </main>
       </div>
     )
