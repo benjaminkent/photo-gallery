@@ -14,10 +14,11 @@ header {
 }
 
 article {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   margin: 1rem;
-  width: 350px;
+  width: 450px;
   border: 1px solid rgb(219, 217, 217);
   height: 0%;
 }
@@ -32,7 +33,7 @@ p {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #4174d5;
   margin: 1rem 0 0 0;
 }
@@ -44,4 +45,18 @@ h2 {
 
 main {
   display: flex;
+}
+
+.photo-list-header {
+  list-style: none;
+  display: flex;
+}
+
+.photo-list-header li {
+  padding: 0 0.5rem;
+}
+
+.photo-list-header a {
+  text-decoration: none;
+  color: #4174d5;
 }
