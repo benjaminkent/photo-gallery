@@ -19,7 +19,7 @@ class PhotoList extends Component {
             </Link>
           </li>
           <li>/</li>
-          <li>{Json.pandas.title}</li>
+          <li>{this.props.list.title}</li>
         </ul>
         <main className="photo-list-main">
           <div className="photo-list-info">
