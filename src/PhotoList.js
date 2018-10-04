@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Json from './Json.json'
+import Home from './Home'
 
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
@@ -7,16 +8,22 @@ class PhotoList extends Component {
   render() {
     return (
       <div>
+        <header>
+          <h1>Things I Like</h1>
+          <h2>A Photo Gallery by Benjamin Kent Jehl</h2>
+        </header>
         <ul className="photo-list-header">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" component={Home}>
+              Home
+            </Link>
           </li>
           <li>/</li>
           <li>{Json.pandas.title}</li>
         </ul>
         <main className="photo-list-main">
           <div className="photo-list-info">
-            <h1>{Json.pandas.title}</h1>
+            <h1>{Json.title}</h1>
             <p>{Json.pandas.description}</p>
           </div>
           <div className="photo-list">

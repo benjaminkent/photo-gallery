@@ -46,6 +46,11 @@ main {
   display: flex;
 }
 
+.category a {
+  text-decoration: none;
+  color: #4174d5;
+}
+
 .photo-list-header {
   list-style: none;
   display: flex;

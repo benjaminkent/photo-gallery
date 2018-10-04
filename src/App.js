@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
 import Json from './Json.json'
-import CategoryList from './CategoryList'
 import PhotoList from './PhotoList'
+import Home from './Home'
 
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
@@ -12,12 +12,20 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <header>
-              <h1>Things I Like</h1>
-              <h2>A Photo Gallery by Benjamin Kent Jehl</h2>
-            </header>
-            <CategoryList />
-            <PhotoList />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route
+                path="/:category"
+                component={route => {
+                  return (
+                    <PhotoList
+                      category={route.match.params.category}
+                      list={Json}
+                    />
+                  )
+                }}
+              />
+            </Switch>
           </div>
         </Router>
       </div>
