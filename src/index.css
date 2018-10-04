@@ -26,6 +26,10 @@ img {
   width: 100%;
 }
 
+h1 {
+  color: #4174d5;
+}
+
 h3,
 p {
   padding: 0 1rem;
